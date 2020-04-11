@@ -24,12 +24,12 @@ required-features = ["tor"]
 
 [dependencies]
 futures = "0.3"
-tokio = { version="0.2", features = ["io-util", "stream", "tcp"] }
+tokio = {git = "https://github.com/qrayven/tokio", branch = "custom-cipherlist", features = ["io-util", "stream", "tcp"] }
 bytes = "0.4"
 either = "1"
 thiserror = "1.0"
 
 [dev-dependencies]
-tokio = { version = "0.2", features = ["io-util", "rt-threaded"] }
+tokio = {  git = "https://github.com/qrayven/tokio", branch = "custom-cipherlist", features = ["io-util", "rt-threaded"] }
 once_cell = "1.2.0"
 hyper = "0.13"
